@@ -10,5 +10,6 @@ $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
 
 (require __DIR__ . '/../src/Routes/transactions.php')($app, $pdo);
+(require __DIR__ . '/../src/Routes/categories.php')($app, $pdo);
 
 $app->run();
